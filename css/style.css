@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-style: none;
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: (204, 43%, 93%);
+}
+.container {
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 200px 250px;
+    grid-template-areas: "servico servico"
+                          "preco sobre";
+    max-width: 700px;
+    background-color: white;
+}
+.servico{
+    padding-bottom: 2em;
+    padding: 2em;
+    grid-area: servico;
+}
+.servico h1{
+    font-size: 1.5em;
+    color:hsl(179, 62%, 43%);
+    font-weight: 700;
+    padding-bottom: 0.9em;
+}
+.servico h2{
+    font-size: 1.1em;
+    color:hsl(71, 87%, 55%);
+    font-weight: 700;
+    padding-bottom: 0.6em;
+}
+.servico .texto-servico{
+    color: hsl(218, 22%, 67%);
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+.preco {
+    background-color:hsl(179, 62%, 43%);
+    grid-area: preco;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0 0 0 0.5em;
+}
+.preco .titulo{
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+.preco .valor{
+    display: flex;
+    padding-bottom: 0.5em;
+    
+}
+.valor div:first-child{
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+.valor div:last-child{
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+.preco p {
+    font-weight: 400;
+    font-size: 1em;
+    opacity: 0.9
+}
+.preco button{
+    background-color: hsl(71, 73%, 54%);
+    height: 3.5em;
+    border-radius: 0.3em;
+    margin-top: 2em;
+    color: #ffff;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    padding: 0.8em;
+    box-shadow: rgba(0, 0, 0, 0.11) 0px 3px 8px;
+}
+.sobre {
+    background-color:hsla(179, 62%, 43%, 0.747);
+    grid-area: sobre;
+    padding: 2em;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0 0 0.5em 0;
+}
+.sobre .titulo-sobre{
+    padding-bottom: 1em;
+}
+.sobre .texto-sobre{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
